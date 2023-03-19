@@ -11,18 +11,18 @@ import NewCar from './pages/NewCar';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-        <Routes>
-            <Route path='/' element={<App/>} />
-            <Route path='cars' element={<Cars />} />
-            <Route path='cars/new' element={<NewCar />} />
-            <Route path='cars/:id' element={<Car />} />
-            {/* <Route path='about' element={<About />} /> */}
-        </Routes>
-    </BrowserRouter>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <Routes>
+                <Route path='/' element={<App />} />
+                <Route path='cars' element={<Cars />} />
+                <Route path='cars/new' element={<NewCar />} />
+                <Route path='cars/:id' element={<Car />} />
+                {/* <Route path='about' element={<About />} /> */}
+            </Routes>
+        </BrowserRouter>
+        <App />
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

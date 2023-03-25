@@ -1,13 +1,10 @@
 import Layout from "./components/Layout";
 
 const App = () => {
-
     return (
         <>
             <Layout>
-                <div>
-                    this is the app
-                </div>
+                <div className="App">this is the app</div>
             </Layout>
         </>
     );

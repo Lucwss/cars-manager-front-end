@@ -14,16 +14,7 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path='/' element={<App />} />
-                <Route path='cars' element={<Cars />} />
-                <Route path='cars/new' element={<NewCar />} />
-                <Route path='cars/:id' element={<Car />} />
-                <Route path="*" element={
-                    <main style={{ padding: "1rem" }}>
-                        <p>There's nothing here!</p>
-                    </main>
-                }
-                />
+                <Route path='/*' element={<App />} />
             </Routes>
         </BrowserRouter>
     </React.StrictMode>

@@ -17,7 +17,7 @@ const Car = () => {
         setPrice(event.target.value)
     }
 
-    const getCarById = async (id) => {
+    const getCarById = async () => {
         try {
             const response = await fetch(`http://0.0.0.0:8000/app/cars/${id}`)
             if (!response.ok) {
@@ -60,7 +60,7 @@ const Car = () => {
 
     }
 
-    const updatePrice = async (id) => {
+    const updatePrice = async () => {
         try {
             console.log("What", `http://0.0.0.0:8000/app/cars/${id}`)
             const response = await fetch(`http://0.0.0.0:8000/app/cars/${id}`, {
@@ -86,7 +86,7 @@ const Car = () => {
     }
 
     useEffect(() => {
-        getCarById(id)
+        getCarById()
     }, [id])
 
     return (

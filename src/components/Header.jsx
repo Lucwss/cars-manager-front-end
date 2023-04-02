@@ -27,9 +27,10 @@ const Header = () => {
                     <li className="mx-1"><Link to="/admin">Admin</Link></li>
                     <li className="mx-1"><Link to="/protected">Protected</Link></li>
                     <li className="mx-1"><Link to="/new">New Car</Link></li>
+                    <li className="mx-1"><Link to="/cars">Cars</Link></li>
                     {auth?.username && <li className='mx-1'><button className='btn-warning' onClick={logout}>
                         Logout <span className='font-semibold'>{auth?.username}</span>
-                        </button></li>}
+                    </button></li>}
                 </ul>
             </div>
         </div>
